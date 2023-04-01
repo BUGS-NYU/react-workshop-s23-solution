@@ -24,7 +24,7 @@ const LinkButton = ({ title, url }) => (
   </a>
 );
 
-const ThemeTogglerButton = ({ currentTheme, toggleTheme }) => (
+const ThemeTogglerButton = ({ toggleTheme }) => (
   <button className='theme-toggler' onClick={toggleTheme}>
     Toggle theme
   </button>
@@ -41,7 +41,7 @@ const App = () => {
 
   return (
     <div className={containerClassName}>
-      <ThemeTogglerButton currentTheme={currentTheme} toggleTheme={toggleTheme} />
+      <ThemeTogglerButton toggleTheme={toggleTheme} />
       <Avatar imageSrc={avatarPic} name='@bugs-nyu' />
       {mapLinks}
     </div>
